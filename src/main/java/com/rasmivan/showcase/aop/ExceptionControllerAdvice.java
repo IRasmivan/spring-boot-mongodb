@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 public class ExceptionControllerAdvice {
 	
 	/** The logger. */
-	private static final Logger logger = LoggerFactory.getLogger(ExceptionControllerAdvice.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(ExceptionControllerAdvice.class);
 	
 	
 	/**
@@ -33,7 +33,7 @@ public class ExceptionControllerAdvice {
 	 */
 	@ExceptionHandler(value = UserDoesnotExistsException.class)
 	public ResponseEntity<String> handleUserDoesNotExistsException(UserDoesnotExistsException e) {
-		logger.error(e.getMessage());
+		LOGGER.error(e.getMessage());
 		return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 	}
 	
@@ -45,7 +45,7 @@ public class ExceptionControllerAdvice {
 	 */
 	@ExceptionHandler(value = UserUpdateDtoEmptyException.class)
 	public ResponseEntity<String> handleUserUpdateEmptyException(UserDoesnotExistsException e) {
-		logger.error(e.getMessage());
+		LOGGER.error(e.getMessage());
 		return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 	}
 

@@ -8,7 +8,7 @@ package com.rasmivan.showcase.constants;
  * @author Rasmivan Ilangovan
  * 
  */
-public final class MessageConstant {
+public final class MessageConstantsUtils {
 
 	/** The Constant USERNOT_FOUND. */
 	public static final String USERNOT_FOUND = "User Does not Exists";

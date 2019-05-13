@@ -9,7 +9,7 @@ package com.rasmivan.showcase.constants;
  * @author Rasmivan Ilangovan
  * 
  */
-public final class GeneralConstant {
+public final class GeneralConstantsUtils{
 
 	/** The Constant MEDIA_TYPE. */
 	public static final String MEDIA_TYPE = "application";
