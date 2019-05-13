@@ -4,11 +4,11 @@
 package com.rasmivan.showcase.constants;
 
 /**
- * The Class MessageConstants.
+ * The Class MessageConstant.
  * @author Rasmivan Ilangovan
  * 
  */
-public final class MessageConstants {
+public final class MessageConstant {
 
 	/** The Constant USERNOT_FOUND. */
 	public static final String USERNOT_FOUND = "User Does not Exists";

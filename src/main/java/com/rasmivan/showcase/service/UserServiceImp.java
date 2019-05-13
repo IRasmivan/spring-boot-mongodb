@@ -17,7 +17,7 @@ import com.rasmivan.showcase.exception.UserDoesnotExistsException;
 import com.rasmivan.showcase.exception.UserUpdateDtoEmptyException;
 import com.rasmivan.showcase.repositories.UserRepository;
 
-import com.rasmivan.showcase.constants.MessageConstants;
+import com.rasmivan.showcase.constants.MessageConstant;
 
 /**
  * The Class UserServiceImp.
@@ -53,7 +53,7 @@ public class UserServiceImp implements UserService {
 		if(user.isPresent()) {
 			return user.get();
 		} else {
-			throw new UserDoesnotExistsException(MessageConstants.USERNOT_FOUND);
+			throw new UserDoesnotExistsException(MessageConstant.USERNOT_FOUND);
 		}
 		
 		/**  The above block is written for readability. the same block can be written as below line. 
@@ -78,7 +78,7 @@ public class UserServiceImp implements UserService {
 		if(userDomain != null && userDomain.getId() != null) {
 			return userDomain;
 		} else {
-			throw new UserCreateUpdateException(MessageConstants.USER_NOT_CREATED);
+			throw new UserCreateUpdateException(MessageConstant.USER_NOT_CREATED);
 		}
 	}
 
@@ -97,7 +97,7 @@ public class UserServiceImp implements UserService {
 			userToUpdate = userRepository.save(userToUpdate);
 			return userToUpdate;
 		} else {
-			throw new UserUpdateDtoEmptyException(MessageConstants.USERUPDATE_EMPTY);
+			throw new UserUpdateDtoEmptyException(MessageConstant.USERUPDATE_EMPTY);
 		}
 	}
 
@@ -115,7 +115,7 @@ public class UserServiceImp implements UserService {
 		if(user.isPresent()) {
 			return user.get();
 		} else {
-			throw new UserDoesnotExistsException(MessageConstants.USERNOT_FOUND);
+			throw new UserDoesnotExistsException(MessageConstant.USERNOT_FOUND);
 		}
 	}
 
@@ -139,7 +139,7 @@ public class UserServiceImp implements UserService {
 		if(id != null) {
 			userRepository.delete(getUserById(id));
 		}
-		return MessageConstants.USER_DELETED_SUCCESSFULLY;
+		return MessageConstant.USER_DELETED_SUCCESSFULLY;
 	}
 	
 	/**

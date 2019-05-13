@@ -5,11 +5,11 @@ package com.rasmivan.showcase.constants;
 
 
 /**
- * The Class GeneralConstants.
+ * The Class GeneralConstant.
  * @author Rasmivan Ilangovan
  * 
  */
-public final class GeneralConstants {
+public final class GeneralConstant {
 
 	/** The Constant MEDIA_TYPE. */
 	public static final String MEDIA_TYPE = "application";

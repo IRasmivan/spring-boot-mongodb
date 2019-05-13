@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 public class ExceptionControllerAdvice {
 	
 	/** The logger. */
-	private static Logger logger = LoggerFactory.getLogger(ExceptionControllerAdvice.class);
+	private static final Logger logger = LoggerFactory.getLogger(ExceptionControllerAdvice.class);
 	
 	
 	/**
