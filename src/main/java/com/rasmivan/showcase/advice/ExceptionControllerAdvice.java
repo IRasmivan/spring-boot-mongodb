@@ -1,7 +1,7 @@
 /*
  * This is an AOP for all the exception we throw from our service.
  */
-package com.rasmivan.showcase.aop;
+package com.rasmivan.showcase.advice;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
